@@ -9,14 +9,14 @@
       "git add"
     ]
   },
-  "main": "dist/didact.umd.js",
-  "module": "dist/didact.es.js",
+  "main": "dist/sebact.umd.js",
+  "module": "dist/sebact.es.js",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build:module": "rollup src/didact.js -f es -n didact -o dist/didact.es.js",
-    "build:main": "rollup src/didact.js -f umd -n didact -o dist/didact.umd.js",
+    "build:module": "rollup src/sebact.js -f es -n sebact -o dist/sebact.es.js",
+    "build:main": "rollup src/sebact.js -f umd -n sebact -o dist/sebact.umd.js",
     "build": "run-p build:module build:main",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1",
