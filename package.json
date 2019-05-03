@@ -1,0 +1,46 @@
+{
+  "name": "sebact",
+  "version": "1.0.0",
+  "description": "My Own React",
+  "main": "index.js",
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier \"**/*.+(js|json|less|css|ts|tsx|md)\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seb7887/sebact.git"
+  },
+  "author": "Sebastian Matias Segura (@seb7887)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seb7887/sebact/issues"
+  },
+  "homepage": "https://github.com/seb7887/sebact#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^2.2.0",
+    "lint-staged": "^8.1.6",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.17.0",
+    "rollup": "^1.11.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
